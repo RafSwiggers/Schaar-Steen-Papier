@@ -35,7 +35,7 @@ function rockPaperScissors(i) {
     console.log(userChoice);
     var computerChoice = Math.floor(Math.random() * 3) + 1;
     var choices = ["nothing", "rock", "paper", "scissors"];
-    computerDiv.insertAdjacentText("beforeend", "The computer chose " + choices[computerChoice])
+    computerDiv.innerText("The computer chose " + choices[computerChoice])
     if (computerChoice === 1) {
 
     }
@@ -43,27 +43,27 @@ function rockPaperScissors(i) {
     console.log(computerChoice);
     if (userChoice === 1) {
         if (computerChoice === 2) {
-            winText.insertAdjacentText("beforeend", " the computer!");
+            winText.innerText("The winner is: the computer!");
         } else if (computerChoice === 1) {
-            winText.insertAdjacentText("beforeend", " No one! It's a Tie!");
+            winText.innerText("The winner is: No one! It's a Tie!");
         } else {
-            winText.insertAdjacentText("beforeend", " you!");
+            winText.innerText("The winner is: you!");
         }
     } else if (userChoice === 2) {
         if (computerChoice === 3) {
-            winText.insertAdjacentText("beforeend", " the computer!");
+            winText.innerText("The winner is: the computer!");
         } else if (computerChoice === 2) {
-            winText.insertAdjacentText("beforeend", " No one! It's a Tie!");
+            winText.innerText("The winner is: No one! It's a Tie!");
         } else {
-            winText.insertAdjacentText("beforeend", " you!");
+            winText.innerText("The winner is: you!");
         }
     } else if (userChoice === 3) {
         if (computerChoice === 1) {
-            winText.insertAdjacentText("beforeend", " the computer!");
+            winText.innerText("The winner is: the computer!");
         } else if (computerChoice === 3) {
-            winText.insertAdjacentText("beforeend", " No one! It's a Tie!");
+            winText.innerText("The winner is: No one! It's a Tie!");
         } else {
-            winText.insertAdjacentText("beforeend", " you!");
+            winText.innerText("The winner is: you!");
         }
     }
 }
