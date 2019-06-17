@@ -1,5 +1,3 @@
-var textField = document.getElementById("userInput");
-
 function start() {
     //This function removes the starting button and brins out the buttons for the player to choose.
     firstDiv = document.getElementById("first-game-div");
@@ -11,21 +9,6 @@ function start() {
     goButton = document.getElementById("second-game-div");
     goButton.classList.remove("d-none");
     goButton.classList.add("d-flex");
-}
-
-function go() {
-    // this function brings the start button into play as soon as the user makes their choice.
-
-
-}
-
-// This lets the function run on "enter" too
-textField.addEventListener("keyup", event)
-
-function event() {
-    if (event.keyCode === 13) {
-        rockPaperScissors;
-    }
 }
 
 // trying to delay the keypress. Make some magic
