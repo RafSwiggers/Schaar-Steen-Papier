@@ -36,10 +36,7 @@ function rockPaperScissors() {
     var computerChoice = Math.floor(Math.random() * 3) + 1;
     var choices = ["nothing", "rock", "paper", "scissors"];
     computerDiv.innerText = "The computer chose " + choices[computerChoice];
-    // sets the computer choice from an array of choices for display.
-    if (computerChoice === 1) {
-
-    }
+    // sets the computer choice from an array of choices for display. 
     if (userChoice === 1) {
         if (computerChoice === 2) {
             winText.innerText = "The winner is: the computer!";
