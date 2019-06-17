@@ -20,12 +20,13 @@ function go() {
 }
 
 // This lets the function run on "enter" too
-textField.addEventListener("keyup", function(event) {
-    // Number 13 is the "Enter" key on the keyboard
+textField.addEventListener("keyup", event)
+
+function event() {
     if (event.keyCode === 13) {
         rockPaperScissors;
     }
-});
+}
 
 // trying to delay the keypress. Make some magic
 function delayedGo() {
