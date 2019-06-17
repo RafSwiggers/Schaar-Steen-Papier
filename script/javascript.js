@@ -25,7 +25,7 @@ function delayedGo() {
     setTimeout(rockPaperScissors(), 2000);
 }
 
-function rockPaperScissors(i) {
+function rockPaperScissors() {
     var winText = document.getElementById("end-text");
     var winDiv = document.getElementById("end-div")
     var computerDiv = document.getElementById("computer-choice");
@@ -35,8 +35,8 @@ function rockPaperScissors(i) {
     // takes a random number between 1 and 3
     var computerChoice = Math.floor(Math.random() * 3) + 1;
     var choices = ["nothing", "rock", "paper", "scissors"];
-    computerDiv.insertAdjacentHTML("beforeend", "The computer chose " + choices[computerChoice])
-        // sets the computer choice from an array of choices for display.
+    computerDiv.innerText = "The computer chose " + choices[computerChoice];
+    // sets the computer choice from an array of choices for display.
     if (computerChoice === 1) {
 
     }
