@@ -32,15 +32,14 @@ function rockPaperScissors(i) {
     // shows the text letting the player know who won
     winDiv.classList.remove("d-none");
     winDiv.classList.add("d-flex");
-    console.log(userChoice);
+    // takes a random number between 1 and 3
     var computerChoice = Math.floor(Math.random() * 3) + 1;
     var choices = ["nothing", "rock", "paper", "scissors"];
-    computerDiv.innerText("The computer chose " + choices[computerChoice])
+    computerDiv.insertAdjacentHTML("beforeend", "The computer chose " + choices[computerChoice])
+        // sets the computer choice from an array of choices for display.
     if (computerChoice === 1) {
 
     }
-
-    console.log(computerChoice);
     if (userChoice === 1) {
         if (computerChoice === 2) {
             winText.innerText("The winner is: the computer!");
