@@ -5,11 +5,19 @@ function start() {
     firstDiv.classList.add("d-flex");
     startDiv.classList.add("d-none");
     startDiv.classList.remove('d-flex');
-
-    console.log(firstDiv.classList);
 }
 
 function go() {
     goButton = document.getElementById("second-game-div");
+    goButton.classList.remove("d-none");
+    goButton.classList.add("d-flex");
 
+}
+
+function setvar(x) {
+    userChoice = x;
+}
+
+function rockpaperscissors(i) {
+    console.log(userChoice);
 }
