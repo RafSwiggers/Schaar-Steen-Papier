@@ -42,27 +42,27 @@ function rockPaperScissors(i) {
     }
     if (userChoice === 1) {
         if (computerChoice === 2) {
-            winText.innerText("The winner is: the computer!");
+            winText.innerText = "The winner is: the computer!";
         } else if (computerChoice === 1) {
-            winText.innerText("The winner is: No one! It's a Tie!");
+            winText.innerText = "The winner is: No one! It's a Tie!";
         } else {
-            winText.innerText("The winner is: you!");
+            winText.innerText = "The winner is: you!";
         }
     } else if (userChoice === 2) {
         if (computerChoice === 3) {
-            winText.innerText("The winner is: the computer!");
+            winText.innerText = "The winner is: the computer!";
         } else if (computerChoice === 2) {
-            winText.innerText("The winner is: No one! It's a Tie!");
+            winText.innerText = "The winner is: No one! It's a Tie!";
         } else {
-            winText.innerText("The winner is: you!");
+            winText.innerText = "The winner is: you!";
         }
     } else if (userChoice === 3) {
         if (computerChoice === 1) {
-            winText.innerText("The winner is: the computer!");
+            winText.innerText = "The winner is: the computer!";
         } else if (computerChoice === 3) {
-            winText.innerText("The winner is: No one! It's a Tie!");
+            winText.innerText = "The winner is: No one! It's a Tie!";
         } else {
-            winText.innerText("The winner is: you!");
+            winText.innerText = "The winner is: you!";
         }
     }
 }
