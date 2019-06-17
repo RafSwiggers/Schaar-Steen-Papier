@@ -1,3 +1,5 @@
+var textField = document.getElementById("userInput");
+
 function start() {
     //This function removes the starting button and brins out the buttons for the player to choose.
     firstDiv = document.getElementById("first-game-div");
@@ -17,15 +19,15 @@ function go() {
 
 }
 
-
-document.getElementById("userInput").addEventListener("keyup", function(event) {
+// This lets the function run on "enter" too
+textField.addEventListener("keyup", function(event) {
     // Number 13 is the "Enter" key on the keyboard
     if (event.keyCode === 13) {
         rockPaperScissors;
     }
 });
 
-
+// trying to delay the keypress. Make some magic
 function delayedGo() {
     setTimeout(rockPaperScissors(), 2000);
 }
