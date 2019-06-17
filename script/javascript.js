@@ -9,6 +9,7 @@ function start() {
 }
 
 function go() {
+    // this function brings the start button into play as soon as the user makes their choice.
     goButton = document.getElementById("second-game-div");
     goButton.classList.remove("d-none");
     goButton.classList.add("d-flex");
@@ -16,17 +17,25 @@ function go() {
 }
 
 function setvar(x) {
+    // sets the user choice, depending on the button the user clicks
     userChoice = x;
+}
+
+function delayedGo() {
+    setTimeout(rockPaperScissors(), 2000);
 }
 
 function rockPaperScissors(i) {
     var winText = document.getElementById("end-text");
     var winDiv = document.getElementById("end-div")
     var computerDiv = document.getElementById("computer-choice");
+    // shows the text letting the player know who won
     winDiv.classList.remove("d-none");
     winDiv.classList.add("d-flex");
     console.log(userChoice);
     var computerChoice = Math.floor(Math.random() * 3) + 1;
+    var choices = ["nothing", "rock", "paper", "scissors"];
+    computerDiv.insertAdjacentText("beforeend", "The computer chose " + choices[computerChoice])
     if (computerChoice === 1) {
 
     }
